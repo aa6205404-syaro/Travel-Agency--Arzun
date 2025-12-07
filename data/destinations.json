@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Santorini Escape",
+    "country": "Greece",
+    "price": 1899,
+    "duration": "7 nights",
+    "description": "Whitewashed villages, sunset cruises, and caldera views in the Cyclades.",
+    "image": "images/santorini.jpg",
+    "highlights": ["Sunset cruise", "Wine tasting", "Private beach day"]
+  },
+  {
+    "id": 2,
+    "name": "Patagonia Adventure",
+    "country": "Chile & Argentina",
+    "price": 2599,
+    "duration": "9 nights",
+    "description": "Hike glacial trails, cruise fjords, and meet local gauchos in the Southern Andes.",
+    "image": "images/patagonia.jpg",
+    "highlights": ["Torres del Paine", "Perito Moreno Glacier", "Estancia barbecue"]
+  },
+  {
+    "id": 3,
+    "name": "Kyoto Traditions",
+    "country": "Japan",
+    "price": 2099,
+    "duration": "6 nights",
+    "description": "Tea ceremonies, bamboo forests, and lantern-lit alleys in Japan's cultural heart.",
+    "image": "images/kyoto.jpg",
+    "highlights": ["Fushimi Inari", "Arashiyama", "Kaiseki dinner"]
+  },
+  {
+    "id": 4,
+    "name": "Safari & Spice",
+    "country": "Kenya & Zanzibar",
+    "price": 3299,
+    "duration": "10 nights",
+    "description": "Witness the savannah's Big Five before unwinding on Zanzibar's turquoise shores.",
+    "image": "images/safari.jpg",
+    "highlights": ["Maasai Mara", "Hot air balloon", "Stone Town"]
+  }
+]
