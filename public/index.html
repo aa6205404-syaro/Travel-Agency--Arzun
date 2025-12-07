@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arzun Travel Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <nav class="nav">
+      <div class="logo">Arzun Travel</div>
+      <div class="nav-links">
+        <a href="#destinations">Destinations</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#quote">Get a Quote</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Tailored Journeys • Boutique Experiences</p>
+      <h1>Designing unforgettable journeys around the world</h1>
+      <p class="lead">From sunset sails in Santorini to safari sunrises in the Mara, our advisors craft every detail for you.</p>
+      <div class="cta-group">
+        <a class="btn primary" href="#quote">Plan my trip</a>
+        <a class="btn ghost" href="#destinations">Explore itineraries</a>
+      </div>
+      <div class="trust">Trusted by 1,200+ travelers • 4.9/5 satisfaction</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="destinations" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured escapes</p>
+        <div class="title-row">
+          <h2>Curated itineraries ready to book</h2>
+          <span class="pill">New for 2025</span>
+        </div>
+        <p class="section-lead">Every journey is customizable—swap hotels, extend nights, or add private guides.</p>
+      </div>
+      <div class="card-grid" id="destination-grid">
+        <!-- Cards populated by app.js -->
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">How we work</p>
+        <h2>Concierge planning from quote to landing</h2>
+        <p class="section-lead">Dedicated specialists tailor each moment, from airport pickups to insider-only dining.</p>
+      </div>
+      <div class="services">
+        <div class="service-card">
+          <div class="icon">🧭</div>
+          <h3>Personalized routes</h3>
+          <p>We map days around your pace—sunrise hikes or slow breakfasts with a view.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🏨</div>
+          <h3>Handpicked stays</h3>
+          <p>Boutique hotels, luxe villas, and eco-lodges vetted by our on-the-ground partners.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🤝</div>
+          <h3>Local hosts</h3>
+          <p>Certified guides and drivers who speak the language—and know the shortcuts.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🛟</div>
+          <h3>24/7 care</h3>
+          <p>Real humans on call for flight changes, dining reservations, or last-minute ideas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Traveler stories</p>
+        <h2>What recent guests are saying</h2>
+      </div>
+      <div class="testimonials">
+        <article class="testimonial">
+          <p>“Our Patagonia trek was flawless—transfers, permits, even a surprise glacier picnic. We just showed up and hiked.”</p>
+          <div class="person">
+            <div class="avatar">EM</div>
+            <div>
+              <p class="name">Elena & Marco</p>
+              <p class="meta">9-night Patagonia Adventure</p>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>“They moved flights and found a Zanzibar villa within hours when our dates shifted. Truly white-glove.”</p>
+          <div class="person">
+            <div class="avatar">RS</div>
+            <div>
+              <p class="name">Renee S.</p>
+              <p class="meta">Safari & Spice honeymoon</p>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>“Kyoto felt personal: tea with a master, a ramen crawl, and a sunset shoot. It was like traveling with friends.”</p>
+          <div class="person">
+            <div class="avatar">TK</div>
+            <div>
+              <p class="name">Taro K.</p>
+              <p class="meta">Kyoto Traditions getaway</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="faqs" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">FAQs</p>
+        <h2>Quick answers</h2>
+      </div>
+      <div id="faq-grid" class="faq-grid"></div>
+    </section>
+
+    <section id="quote" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Ready to travel?</p>
+        <h2>Request a tailored quote</h2>
+        <p class="section-lead">Tell us your dream destination and we'll design the rest within one business day.</p>
+      </div>
+      <div class="quote-layout">
+        <form id="quote-form" class="quote-form">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Alex Traveler" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="destination">Destination</label>
+            <input id="destination" name="destination" type="text" placeholder="e.g. Santorini, Kenya, Kyoto" required>
+          </div>
+          <div class="form-row">
+            <label for="travelers">Travelers</label>
+            <input id="travelers" name="travelers" type="number" min="1" value="2">
+          </div>
+          <div class="form-row">
+            <label for="notes">Trip notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Dates, preferences, or must-do experiences"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send my request</button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+        <div class="quote-card">
+          <h3>What happens next?</h3>
+          <ul>
+            <li>We pair you with a destination specialist within 24 hours.</li>
+            <li>You review a tailored itinerary with hotels, experiences, and pricing.</li>
+            <li>We reserve everything and stay in touch before, during, and after your trip.</li>
+          </ul>
+          <div class="assurance">Secure payments · Flexible dates · Human support</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="logo">Arzun Travel</p>
+      <p>Crafting journeys with care, creativity, and trusted local partners.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#destinations">Destinations</a>
+      <a href="#services">Services</a>
+      <a href="#quote">Plan a trip</a>
+    </div>
+    <p class="copyright">© 2024 Arzun Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

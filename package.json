@@ -1,0 +1,17 @@
+{
+  "name": "travel-agency-arzun",
+  "version": "1.0.0",
+  "description": "Full-stack travel agency website with a lightweight Node.js API and landing page.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "travel",
+    "agency",
+    "website",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT"
+}
